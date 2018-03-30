@@ -1127,6 +1127,8 @@ export default withRouter(connect(
 ```
 
 - Link必须包含在Router中
+
+- 移动端vw, vh布局，参考[纯CSS3使用vw和vh视口单位实现自适应](http://caibaojian.com/vw-vh.html)
  
 文档参考
 
@@ -1168,4 +1170,8 @@ npm run lint
 
 # run the tests
 npm test
+
+# 运行不了尝试将package.json的~换成^看看
+
+# dev使用官方API， 打包使用mockjs数据（造了一些数据）
 ```
