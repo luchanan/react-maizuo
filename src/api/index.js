@@ -2,11 +2,11 @@ import fetch from 'src/utils/fetch.js'
 import { commonRequest } from './commonRequest'
 let env = process.env.NODE_ENV
 let url = env !== 'production' ? '/api/' : 'https://m.maizuo.com/v4/api/'
-if (env === 'production') { // development
-  // 开发环境使用官方API， 因为有代理
-  // 打包环境使用mockjs, 因为不能直接调去api
-  require('assets/mockjs')
-}
+// if (env === 'production') { // development
+//   // 开发环境使用官方API， 因为有代理
+//   // 打包环境使用mockjs, 因为不能直接调去api
+//   require('assets/mockjs')
+// }
 // 获取首页banner
 export function getBanner (params) {
   return fetch({
