@@ -1,0 +1,46 @@
+@import "~assets/sass/base"
+$bg: #f6f6f6
+#login
+  height: vw(1134)
+  background: $bg
+  form
+    padding: 0px vw(60) 0px vw(60)
+  .form-group
+    padding: vw(60) 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      height: vw(24)
+      width: 100%
+      border: solid #c4c4c4
+      border-width: 0 1px 1px 1px
+  .form-control
+    display: block
+    width: 100%
+    height: vw(68)
+    padding: vw(12) vw(24)
+    font-size: vw(28)
+    line-height: 1.42857143
+    color: #555
+    background-image: none
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+    border: none
+    background-color: $bg
+    border-radius: 0px
+    box-shadow: none
+    outline: none
+  .submit
+    &[disabled]
+      opacity: .3
+    width: vw(320)
+    background-color: #fe8233
+    color: #fff
+    border: none
+    border-radius: vw(72)
+    margin: vw(90) auto 0 auto
+    padding: vw(16) vw(24)
+    font-size: vw(30)
+    outline: none
+    display: block
