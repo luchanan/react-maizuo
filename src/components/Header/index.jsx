@@ -34,7 +34,7 @@ class Header extends Component {
           <p>{title}</p>
         </div>
         <div data-flex='cross:center'>
-          <a className='go-city'>广州<i className='iconfont icon-dropdown' /></a>
+          <a className='go-city'>深圳<i className='iconfont icon-dropdown' /></a>
           <a className='go-mine' href='javascript:;' onClick={this.goMy}><i className='iconfont icon-people' /></a>
         </div>
       </nav>

@@ -44,7 +44,7 @@ class Detail extends Component {
           <div className='film-title'>影片简介</div>
           <div className='info'>
             <div className='file-word'>导&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演：{detail.director}</div>
-            <div className='file-word'>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演：112</div>
+            <div className='file-word'>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;演：{detail.actors}</div>
             <div className='file-word'>地区语言：{detail.nation}({detail.language})</div>
             <div className='file-word'>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：{detail.category}</div>
             <div className='file-word'>上映日期：{this.formatDate(detail.premiereAt)}</div>

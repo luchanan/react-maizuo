@@ -11,6 +11,11 @@ export function getFilmDetail (params) {
     api.getFilmDetail(params).then(res => {
       // 更改title
       console.log(res, 'film-detail')
+      let actors = []
+      res.data.film.actors.forEach(items => {
+        actors.push(items.name)
+      })
+      res.data.film.actors = actors.join('|')
       dispatch(appActions.changeTitle(res.data.film.name))
       dispatch(filmDetail(res.data.film))
     })
